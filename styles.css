@@ -147,3 +147,5 @@ h2 { margin-top: 54px; }
 .timeline .year { font: 700 14px Arial,Helvetica,sans-serif; color: var(--accent); padding-top: 3px; }
 .timeline strong { font-weight: 600; }
 @media (max-width: 680px) { .hero { grid-template-columns: 1fr; gap: 18px; } .avatar { width: 118px; height: 118px; border-radius: 14px; } .nav { gap: 8px; } }
+
+.profile-photo { display: block; object-fit: cover; object-position: center 30%; border: 1px solid var(--line); }
