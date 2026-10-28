@@ -129,3 +129,21 @@ footer {
 .highlight strong { color: var(--accent); }
 .highlight p { margin: 8px 0; }
 a:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+
+/* 2026 academic profile redesign */
+:root { --max: 1040px; --bg: #faf9f7; --line: #e4e1dc; }
+body { line-height: 1.72; }
+.nav { min-height: 76px; }
+nav a { transition: color .15s ease; }
+main { padding-top: 72px; }
+.hero { grid-template-columns: 180px minmax(0, 1fr); gap: 46px; }
+.avatar { width: 170px; height: 170px; border-radius: 18px; background: #f0e9e7; font-size: 48px; }
+.profile-meta { color: var(--muted); font-family: Arial,Helvetica,sans-serif; font-size: 14px; margin: 10px 0 0; }
+.hero h1 { font-size: clamp(36px,4.5vw,52px); letter-spacing: -.025em; }
+h2 { margin-top: 54px; }
+.card { box-shadow: 0 3px 18px rgba(24,28,35,.025); }
+.timeline { list-style: none; margin: 0; padding: 0; }
+.timeline li { display: grid; grid-template-columns: 64px 1fr; gap: 16px; border-bottom: 1px solid var(--line); padding: 15px 0; }
+.timeline .year { font: 700 14px Arial,Helvetica,sans-serif; color: var(--accent); padding-top: 3px; }
+.timeline strong { font-weight: 600; }
+@media (max-width: 680px) { .hero { grid-template-columns: 1fr; gap: 18px; } .avatar { width: 118px; height: 118px; border-radius: 14px; } .nav { gap: 8px; } }
